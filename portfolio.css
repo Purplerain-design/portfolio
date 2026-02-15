@@ -6,7 +6,7 @@ body {
         #ffffff,
         #8a7c9c,
         #c7a3d2,
-        #9c93e5
+        #ffffff
 
     );
 }
@@ -15,6 +15,7 @@ body {
     width: 90%;
     border-radius: 40px;
     margin-bottom: 0;
+    margin-top: 30px;
 }
 
 .heading1 {
@@ -88,6 +89,7 @@ body {
 
 .about {
     font-size: 100%;
+    text-align: center;
 }
 
 .about-myself {
@@ -322,7 +324,7 @@ footer {
     }
 
     .skills-section .container {
-        gap: 10%;
+        gap: 5%;
 
     }
 
@@ -378,8 +380,8 @@ footer {
         height: 300px;
     }
 
-    .image {
-        width: 100%;
+    .image img{
+        margin-top: 0;
     }
 
     .about-bg {
