@@ -11,25 +11,29 @@
 
 <body>
     <nav>
-
+        <button title="read text" class="speech-btns" id="start" >🔊 Read </button>
+        <button title=" stop reading text" class="speech-btns" id="stop">⏹ Stop</button>
     </nav>
 
     
     <div class="per-details">
-        <h1 class="heading1">MALAWU NWABISA</h1>
-        <p class="about-me">CS & IS STUDENT | ASPIRING WEB DEVELOPER</p>
+        <h1 class="heading1 speech">MALAWU NWABISA</h1>
+        <p class="about-me speech">CS & IS STUDENT | ASPIRING WEB DEVELOPER</p>
 
         <div class="btns-container">
-            <button class="btn">Contact me</button>
-            <button class="btn1">Resume</button>
+            <button class="btn" id="cont-btn ">Contact me</button>
+            <a href="Resume/resume.pdf" target="_blank" >
+                <button class="btn1" id="resu-btn">Resume</button>
+            </a>
+            
         </div>
     </div>
 
 
     <div class="about-bg">
-        <div class="about-myself">
-            <h2 class="about-heading">About me.</h2>
-            <p class="about">
+        <div class="about-myself" >
+            <h2 class="about-heading speech">About me.</h2>
+            <p class="about speech">
                 I am a Computer Science and Information Systems Student at <b>Rhodes University</b>, passionate about learning
                 and creating projects in technology, I like exploring different areas of tech through hands on
                 experience. My skills include various programming languages, software development, web technologies and database systems.
@@ -45,10 +49,10 @@
     </div>
 
 
-    </div>
+    <!-- </div> -->
 
     <div class="skills-section">
-        <h2 class="projects">My Technical Skills <br>& Tools</h2>
+        <h2 class="projects speech">My Technical Skills <br>& Tools</h2>
         <hr>
         <div class="container">
 
@@ -57,16 +61,17 @@
                     <div class="content">
 
                         <span><img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" width="30%"></span>
-                        <h3>Languages</h3>
+                        <h3 class="speech">Languages</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button>Java</button>
-                        <button>Python</button>
-                        <button>C</button>
+                        <button class="speech">Java</button>
+                        <button class="speech">Python</button>
+                        <button class="speech">PHP</button>
+                        <button class="speech">C</button>
 
 
 
@@ -81,19 +86,16 @@
                     <div class="content">
 
                        <span><img src="https://cdn-icons-png.flaticon.com/128/3715/3715301.png" alt="" width="30%"></span>
-                        <h3>Web Technology</h3>
+                        <h3 class="speech">Web Technology</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button>JavaScript</button>
-                        <button>HTML</button>
-                        <button>CSS</button>
-
-
-
+                        <button class="speech">JavaScript</button>
+                        <button class="speech">HTML</button>
+                        <button class="speech">CSS</button>
 
                     </div>
                 </div>
@@ -105,15 +107,15 @@
                     <div class="content">
 
                         <span><img src="https://cdn-icons-png.flaticon.com/128/9672/9672242.png" alt="" width="30%"></span>
-                        <h3>Databases</h3>
+                        <h3 class="speech">Databases</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button>mongoDB</button>
-                        <button>SQL</button>
+                        <button class="speech">mongoDB</button>
+                        <button class="speech">SQL</button>
 
                     </div>
                 </div>
@@ -125,16 +127,16 @@
                     <div class="content">
 
                        <span><img src="https://cdn-icons-png.flaticon.com/128/4270/4270036.png" alt="" width="30%"></span>
-                        <h3>Tools</h3>
+                        <h3 class="speech">Tools</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button>VS Code</button>
-                        <button>Github</button>
-                        <button>Git</button>
+                        <button class="speech">VS Code</button>
+                        <button class="speech">Github</button>
+                        <button class="speech">Git</button>
 
                     </div>
                 </div>
@@ -147,7 +149,7 @@
 
 
     <div class="skills-section">
-        <h2 class="projects">My Projects</h2>
+        <h2 class="projects speech">My Projects</h2>
         <hr>
         <div class="container">
 
@@ -156,13 +158,13 @@
                     <div class="content">
 
                         <span><img src="https://cdn-icons-png.flaticon.com/128/5491/5491454.png" alt="" width="30%"></span>
-                        <h3>Moster-Hunt</h3>
+                        <h3 class="speech">Moster-Hunt</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
-                        <p>
+                        <p class="speech">
                             Monster-Hunt is a role-playing game created by a group of five students in their first year,
                             The
                             game combines exploration, puzzle-solving, and time-based challenges to create an engaging
@@ -181,14 +183,14 @@
                     <div class="content">
                         <div class="icon">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/2242/2242445.png" alt="" width="30%"></span>
-                            <h3>Terminal App</h3>
+                            <h3 class="speech">Terminal App</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
-                        <p>
+                        <p class="speech">
                             Python based terminap application that manages university student data ans supports CRUD
                             operations, advanced queries, course enrolment and aaggregation based data analysis.
 
@@ -206,14 +208,14 @@
                     <div class="content">
                         <div class="icon">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/12075/12075637.png" alt="" width="30%"></span>
-                            <h3>Purplecafe</h3>
+                            <h3 class="speech">Purplecafe</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
-                        <p>
+                        <p class="speech">
                             My very first web based coffee shop that supports online ordering, delivery management,
                             secure
                             payment processing.
@@ -232,14 +234,14 @@
                     <div class="content">
                         <div class="icon">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/5065/5065636.png" alt="" width="30%"></span>
-                            <h3>Relationship Advice</h3>
+                            <h3 class="speech">Relationship Advice</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
-                        <p>
+                        <p class="speech">
                            Third-year university group project, developed by a group  of five. Responsive and dynamic web application for morden wedding event management.
 
 
@@ -257,14 +259,14 @@
                     <div class="content">
                         <div class="icon">
                             <span><img src="https://cdn-icons-png.flaticon.com/128/3476/3476457.png" alt="" width="30%"></span>
-                            <h3>Portfolio</h3>
+                            <h3 class="speech">Portfolio</h3>
                         </div>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
-                        <p>
+                        <p class="speech">
                             A curated collection of my development, technical skills, and learning progress in software
                             and
                             web technology.
@@ -301,16 +303,20 @@
             </div>
 
 
-            <div class="social">
+            <!-- <div class="social">
                 <a href="https://wa.me/27733090256" target="_blank">
                     <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="photo" width="35%">
                 </a>
-            </div>
+            </div> -->
 
 
         </div>
         <p id="Nwabisa"><b> &copy 2026 Nwabisa Malawu</p>
     </footer>
+    <script src="portfolio.js" defer
+     ></script>
+    <script src="textToSpeech.js" defer
+     ></script>
 </body>
 
 </html>
