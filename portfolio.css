@@ -3,6 +3,17 @@ body {
     overflow-x: hidden;
     
 }
+nav {
+padding-top: 10px;
+padding-left: 10px;
+
+}
+.speech-btns {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
 
 .image img {
     width: 90%;
