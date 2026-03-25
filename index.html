@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="CSS/portfolio.css">
 </head>
 
 <body>
-    <nav>
-        <button title="read text" class="speech-btns" id="start" >🔊 Read </button>
-        <button title=" stop reading text" class="speech-btns" id="stop">⏹ Stop</button>
-    </nav>
+    
 
     
     <div class="per-details">
-        <h1 class="heading1 speech">MALAWU NWABISA</h1>
+        <h1 class="heading1 ">MALAWU NWABISA</h1>
         <p class="about-me speech">CS & IS STUDENT | ASPIRING WEB DEVELOPER</p>
 
         <div class="btns-container">
@@ -31,15 +28,20 @@
 
 
     <div class="about-bg">
-        <div class="about-myself" >
+        <div class="about-myself" id="abt-txt">
             <h2 class="about-heading speech">About me.</h2>
             <p class="about speech">
                 I am a Computer Science and Information Systems Student at <b>Rhodes University</b>, passionate about learning
                 and creating projects in technology, I like exploring different areas of tech through hands on
-                experience. My skills include various programming languages, software development, web technologies and database systems.
+                experience. My skills include various programming languages, software development, web technologies and database systems.<br>
 
+                
             </p>
+            <button title="read text" class="speech-btns bg" id="start" data-target="abt-txt">🔊</button>
+            <button title=" stop reading text" class="speech-stop-btns bg" id="stop">⏹</button>
         </div>
+        
+
 
         <div class="image">
             <img src="Images/f10817728-1.jpg" alt="" width="50%">
@@ -52,7 +54,7 @@
     <!-- </div> -->
 
     <div class="skills-section">
-        <h2 class="projects speech">My Technical Skills <br>& Tools</h2>
+        <h2 class="projects ">My Technical Skills <br>& Tools</h2>
         <hr>
         <div class="container">
 
@@ -61,17 +63,17 @@
                     <div class="content">
 
                         <span><img src="https://cdn-icons-png.flaticon.com/128/6062/6062646.png" alt="" width="30%"></span>
-                        <h3 class="speech">Languages</h3>
+                        <h3 class="">Languages</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button class="speech">Java</button>
-                        <button class="speech">Python</button>
-                        <button class="speech">PHP</button>
-                        <button class="speech">C</button>
+                        <button class="">Java</button>
+                        <button class="">Python</button>
+                        <button class="">PHP</button>
+                        <button class="">C</button>
 
 
 
@@ -86,16 +88,16 @@
                     <div class="content">
 
                        <span><img src="https://cdn-icons-png.flaticon.com/128/3715/3715301.png" alt="" width="30%"></span>
-                        <h3 class="speech">Web Technology</h3>
+                        <h3 class="">Web Technology</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button class="speech">JavaScript</button>
-                        <button class="speech">HTML</button>
-                        <button class="speech">CSS</button>
+                        <button class="">JavaScript</button>
+                        <button class="">HTML</button>
+                        <button class="">CSS</button>
 
                     </div>
                 </div>
@@ -107,15 +109,15 @@
                     <div class="content">
 
                         <span><img src="https://cdn-icons-png.flaticon.com/128/9672/9672242.png" alt="" width="30%"></span>
-                        <h3 class="speech">Databases</h3>
+                        <h3 class="">Databases</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button class="speech">mongoDB</button>
-                        <button class="speech">SQL</button>
+                        <button class="">mongoDB</button>
+                        <button class="">SQL</button>
 
                     </div>
                 </div>
@@ -127,16 +129,16 @@
                     <div class="content">
 
                        <span><img src="https://cdn-icons-png.flaticon.com/128/4270/4270036.png" alt="" width="30%"></span>
-                        <h3 class="speech">Tools</h3>
+                        <h3 class="">Tools</h3>
                     </div>
                 </div>
 
                 <div class="face face2">
                     <div class="content">
 
-                        <button class="speech">VS Code</button>
-                        <button class="speech">Github</button>
-                        <button class="speech">Git</button>
+                        <button class="">VS Code</button>
+                        <button class="">Github</button>
+                        <button class="">Git</button>
 
                     </div>
                 </div>
@@ -149,11 +151,11 @@
 
 
     <div class="skills-section">
-        <h2 class="projects speech">My Projects</h2>
+        <h2 class="projects ">My Projects</h2>
         <hr>
         <div class="container">
 
-            <div class="card">
+            <div class="card" id="monster">
                 <div class="face face1">
                     <div class="content">
 
@@ -171,6 +173,11 @@
                             experience.
 
                         </p>
+                        <button title="read text" class="speech-btns" id="start" data-target="monster">🔊</button>
+                        <button title=" stop reading text" class="speech-stop-btns" id="stop">⏹
+
+                        </button>
+
                         <a href="https://github.com/poctrop/Monster-Hunt" target="_blank">View on Github</a>
 
                     </div>
@@ -178,7 +185,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" id="terminal">
                 <div class="face face1">
                     <div class="content">
                         <div class="icon">
@@ -191,10 +198,13 @@
                 <div class="face face2">
                     <div class="content">
                         <p class="speech">
-                            Python based terminap application that manages university student data ans supports CRUD
+                            Python based terminal application that manages university student data ans supports CRUD
                             operations, advanced queries, course enrolment and aaggregation based data analysis.
 
                         </p>
+                        <button title="read text" class="speech-btns" id="start" data-target="terminal">🔊 </button>
+                        <button title=" stop reading text" class="speech-stop-btns" id="stop">⏹</button>
+
                         <a href="https://github.com/Purplerain-design/MongoDB-TerminalApp" target="_blank">View on Github</a>
 
                     </div>
@@ -203,7 +213,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card" id="purple">
                 <div class="face face1">
                     <div class="content">
                         <div class="icon">
@@ -216,11 +226,12 @@
                 <div class="face face2">
                     <div class="content">
                         <p class="speech">
-                            My very first web based coffee shop that supports online ordering, delivery management,
-                            secure
-                            payment processing.
-
+                            My very first web based coffee shop that supports online ordering, delivery management.
+                            (under development)
                         </p>
+                        <button title="read text" class="speech-btns" id="start" data-target="purple">🔊</button>
+                        <button title=" stop reading text" class="speech-stop-btns" id="stop">⏹</button>
+
                         <a href="https://github.com/Purplerain-design/Purplecafe" target="_blank">View on Github</a>
                         <a href="https://purplerain-design.github.io/Purplecafe/">View Website</a>
 
@@ -229,7 +240,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" id="advice">
                 <div class="face face1">
                     <div class="content">
                         <div class="icon">
@@ -246,6 +257,9 @@
 
 
                         </p>
+                        <button title="read text" class="speech-btns" id="start" data-target="advice">🔊</button>
+                        <button title=" stop reading text" class="speech-stop-btns" id="stop">⏹</button>
+
                         <a href="https://github.com/Martin-Vosloo/CS301_Website.git" target="_blank">View on Github</a>
                         
 
@@ -254,7 +268,7 @@
 
             </div>
 
-            <div class="card">
+            <div class="card" id="portfolio">
                 <div class="face face1">
                     <div class="content">
                         <div class="icon">
@@ -271,8 +285,11 @@
                             and
                             web technology.
                         </p>
+                        <button title="read text" class="speech-btns" id="start" data-target="portfolio">🔊</button>
+                        <button title=" stop reading text" class="speech-stop-btns" id="stop">⏹</button>
+
                         <a href="https://github.com/Purplerain-design/portfolio.git" type="but">View on Github</a>
-                        <a href=" https://purplerain-design.github.io/portfolio/" type="but">View website</a>
+                        <!-- <a href=" https://purplerain-design.github.io/portfolio/" type="but">View website</a> -->
 
                     </div>
                 </div>
@@ -305,9 +322,9 @@
         </div>
         <p id="Nwabisa"><b> &copy 2026 Nwabisa Malawu</p>
     </footer>
-    <script src="portfolio.js" defer
+    <script src="JavaScript/portfolio.js" defer
      ></script>
-    <script src="textToSpeech.js" defer
+    <script src="JavaScript/textToSpeech.js" defer
      ></script>
 </body>
 

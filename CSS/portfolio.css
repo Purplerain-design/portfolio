@@ -8,11 +8,26 @@ padding-top: 10px;
 padding-left: 10px;
 
 }
-.speech-btns {
+.bg{
+    background-color: #ffffff !important;
+
+}
+#start, #stop{
     padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    cursor: pointer; 
+}
+.speech-btns, .speech-stop-btns {
+    display: flex;
+    justify-self: center;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+
+}
+/* Hide all stop buttons initially */
+.speech-stop-btns {
+    display: none !important;
 }
 
 .image img {
