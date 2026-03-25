@@ -1,6 +1,6 @@
 // get id's of buttons
-const stopBtn = document.getElementById("stop");
-const startBtn = document.getElementById("start");
+const stopBtn = document.querySelectorAll(".speech-stop-btns");
+const startBtn = document.querySelectorAll(".speech-btns");
 
 
 // text to speech API and get all elements to be spoken
@@ -9,28 +9,44 @@ const content = document.querySelectorAll(".speech");
 
 
 //read content
-startBtn.onclick = function() {
+
+for(let i = 0; i < startBtn.length;i++){
+
+    
+startBtn[i].onclick = function() {
     //prevent overlap, if read btn has already been clicked
     if(textToSpeech.speaking){
         console.warn("already speaking...");
         return;
     }
-    // combines txt from multiple elements with class = speech
+    //stores all text to be read
     let fullText = "";
 
-    // looop through the txt to be spoken and add space btn elements and append it to full text
-    for(let i = 0; i < content.length; i++){
-        fullText += content[i].innerText + ". ";
+    // check button has a specific target section to read & get the data attribute( and use its text)
+    const targetid = startBtn[i].getAttribute("data-target");
+    if(targetid){
+        const targetElement = document.getElementById(targetid);
+        if(targetElement){
+            const speechElems = targetElement.querySelectorAll(".speech");
+
+            for(let i = 0; i < speechElems.length; i++){
+                fullText += speechElems[i].innerText + ". ";
+            }
+        }
     }
-    let phoneticTxt = fullText.replace(" MALAWU NWABISA", " mah-lah-wuh-wah-b-sah");
     // create utterance object
-    // let utterance = new SpeechSynthesisUtterance(fullText);
-    let utterance = new SpeechSynthesisUtterance(phoneticTxt);
+    let utterance = new SpeechSynthesisUtterance(fullText);
     textToSpeech.speak(utterance);
 };
+
+}
+
 // stop reading content
-stopBtn.onclick = function() {
+for(let i = 0; i < stopBtn.length;i++){
+    stopBtn[i].onclick = function() {
     if(textToSpeech.speaking){
         textToSpeech.cancel();
     }
-};
+    };
+}
+
